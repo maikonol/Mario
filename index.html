@@ -1,35 +1,54 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Bros</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Mario Dev</title>
 </head>
 
 <body>
-    <div class="caixa-mae">
+    <div class="mascara-formulario"></div>
+    <header>
+        <img src="/img/logo-header.png" alt="logo-header">
+        <a href="">Home</a>
+        <a href="">Nossos Serviços</a>
+        <a href="#" id="fale-conosco">Fale Conosco</a>
+    </header>
+    <main>
         <div class="caixa-principal">
-            <img class="logo-mario" src="./img/logo.png" alt="Logo mario Bros">
-            <p> Encanadores mario & Luigi - Resolvendo seus problemas com estilo!</p>
-            <p>Você ja se encontrou em uma situação de emergencia com encanamento? Se sua resposta for Não é isso mesmo,
-                porque agora você não precisa se preocupar nós resolvemos para você</p>
-            <button> Entre em Contato </button>
+            <img src="./img/logo.png" alt="imagem-logo" class="logo-mario">
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!</p>
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+            <button onclick="formularioContato()">Entre em contato</button>
         </div>
+
         <div>
-            <img src="./img/mario.png" alt="mario">
+            <img src="./img/mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
         </div>
 
-    </div>
+    </main>
 
-
-    <div class="caixa-de-video">
+    <div class="caixa-video">
         <video src="./img/video.mp4" autoplay muted loop></video>
         <div class="mascara"></div>
     </div>
-
+    <form class="formulario-fale-conosco">
+        <input type="text" placeholder="Seu nome" name="nome">
+        <input type="tel" placeholder="Seu telefone" name="telefone">
+        <textarea id="" placeholder="Digite seu problema aqui..." name="duvida"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
 
 </body>
+<script src="scripts.js"></script>
 
 </html>
